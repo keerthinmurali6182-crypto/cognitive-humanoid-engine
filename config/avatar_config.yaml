@@ -1,0 +1,12 @@
+humanoid:
+  model_name: "Cognitive-Humanoid-v1"
+  firmware_version: "3.4.2"
+motor_limits:
+  neck_yaw_max: 45.0      # Horizontal rotation limit (Degrees)
+  neck_pitch_max: 30.0    # Vertical tilt limit (Degrees)
+  eyebrow_lift_max: 1.0   # Blendshape coefficient max (0.0 to 1.0)
+emotion_map:
+  joy: { neck_pitch: 10.0, eyebrow_lift: 0.8, jaw_open: 0.3 }
+  sadness: { neck_pitch: -20.0, eyebrow_lift: 0.1, jaw_open: 0.0 }
+  anger: { neck_pitch: -5.0, eyebrow_lift: 0.0, jaw_open: 0.1 }
+  neutral: { neck_pitch: 0.0, eyebrow_lift: 0.4, jaw_open: 0.0 }
